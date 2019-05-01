@@ -11,10 +11,10 @@ public class Main {
 			int newElement = intArray[firstUnsortedIndex];
 			int i;
 			for( i = firstUnsortedIndex ; i > 0 && intArray[i-1] > newElement ; i--) {
-				
+				intArray[i]=intArray[i-1];
 			}
 				
-			
+			intArray[i]=newElement;
 		}
 		
 		
